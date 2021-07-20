@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>查询结果</title>
+	</head>
+	<body>
+		<h1>2020-2021-2 期末成绩</h1>
+		<p>
+		姓名：{{ name }}<br />
+		学号：{{ userid }}<br />
+		总分：{{ total }}<br />
+		平均绩点：{{ score }}<br />
+		班级排名：{{ rank }}<br />
+		</p>
+		<p>以下成绩仅显示主课成绩，校选课成绩未统计在内！望理解！！！</p>
+		<table border="1" cellspacing="5" cellpadding="5">
+			<tr>
+				<th>科目</th>
+				<th>成绩</th>
+			</tr>
+			<tr>
+				<td>毛泽东思想和中国特色社会主义理论体系概论</td>
+				<td>{{ mzd }}</td>
+			</tr>
+			<tr>
+				<td>习近平新时代中国特色社会主义思想概论</td>
+				<td>{{ xjp }}</td>
+			</tr>
+			<tr>
+				<td>嵌入式系统</td>
+				<td>{{ qrs }}</td>
+			</tr>
+			<tr>
+				<td>嵌入式系统实验</td>
+				<td>{{ qrs_ex }}</td>
+			</tr>
+			<tr>
+				<td>大学英语（Ⅳ）</td>
+				<td>{{ eng }}</td>
+			</tr>
+			<tr>
+				<td>大学体育（Ⅳ）</td>
+				<td>{{ pe }}</td>
+			</tr>
+			<tr>
+				<td>操作系统*</td>
+				<td>{{ os }}</td>
+			</tr>
+			<tr>
+				<td>算法分析与设计*</td>
+				<td>{{ algo }}</td>
+			</tr>
+			<tr>
+				<td>算法分析与设计实验</td>
+				<td>{{ algo_ex }}</td>
+			</tr>
+			<tr>
+				<td>Matlab与数学建模</td>
+				<td>{{ matlab }}</td>
+			</tr>
+			<tr>
+				<td>操作系统实验</td>
+				<td>{{ os_ex }}</td>
+			</tr>
+			<tr>
+				<td>形势与政策（Ⅳ）</td>
+				<td>{{ xs }}</td>
+			</tr>
+		</table>
+	</body>
+</html>
